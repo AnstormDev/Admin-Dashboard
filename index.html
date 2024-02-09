@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Sidebar | HTML & CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Dashboard</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <i class='bx bx-search'></i>
+        </div>
+        <div class="left-side">
+            <a href="#"><i class='bx bxs-bell'></i></a>
+    <a href="#"><div class="account">
+            <img src="logo.jpg" width="38px">
+        </div></a>
+    </div>
+    </header>
+
+    <section class="sidebar">
+        <h1>AnstorM</h1>
+        <div class="links">
+        <a href="#"><i class='bx bxs-grid-alt' style='color:#ffffff'></i> Dashboard</a>
+        <a href="#"><i class='bx bxs-user' style='color:#ffffff'></i> User</a>
+        <a href="#"><i class='bx bxs-chat' style='color:#ffffff' ></i> Messages</a>
+        <a href="#"><i class='bx bxs-pie-chart-alt-2' style='color:#ffffff' ></i> Analytics</a>
+        <a href="#"><i class='bx bxs-folder' style='color:#ffffff' ></i> File Manager</a>
+        <a href="#"><i class='bx bxs-cart-alt' style='color:#ffffff' ></i> Order</a>
+        <a href="#"><i class='bx bxs-heart' style='color:#ffffff' ></i> Saved</a>
+        <a href="#"><i class='bx bxs-cog' style='color:#ffffff' ></i> Settings</a>
+    </div>
+    </section>
+
+    <main class="main">
+        <div class="top-divs">
+        <div class="stats-div order">
+            <img src="cart.png" width="40px">
+            <h1>1020</h1>
+            <p>New Order</p>
+        </div>
+        <div class="stats-div  visitors">
+            <img src="user.png" width="40px">
+            <h1>2834</h1>
+            <p>Visitors</p>
+        </div>
+        <div class="stats-div  sales">
+            <img src="money.png" width="40px">
+            <h1>$2543</h1>
+            <p>Total Sales</p>
+        </div>
+    </div>
+    <div class="recent">
+        <div class="recent-head">
+            <h1>Recent Orders</h1>
+            <div class="search-filter">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <i class='bx bx-search'></i>
+                <i class='bx bx-filter'></i>
+            </div>
+            </div>
+        </div>
+        <div class="recent-content">
+            <div class="col-1">
+                <h3>User</h3>
+                <div class="users">
+                    <i class='bx bxs-user'></i>
+                    <p>John Doe</p>
+                </div>
+                <div class="users">
+                    <i class='bx bxs-user'></i>
+                    <p>John Doe</p>
+                </div>
+                <div class="users">
+                    <i class='bx bxs-user'></i>
+                    <p>John Doe</p>
+                </div>
+                <div class="users">
+                    <i class='bx bxs-user'></i>
+                    <p>John Doe</p>
+                </div>
+                <div class="users">
+                    <i class='bx bxs-user'></i>
+                    <p>John Doe</p>
+                </div>
+            </div>
+            <div class="col-2">
+                <h3>Date Order</h3>
+                <div class="date">
+                    <p>10-01-2024</p>
+                </div>
+                <div class="date">
+                    <p>10-01-2024</p>
+                </div>
+                <div class="date">
+                    <p>10-01-2024</p>
+                </div>
+                <div class="date">
+                    <p>10-01-2024</p>
+                </div>
+                <div class="date">
+                    <p>10-01-2024</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <h3>Status</h3>
+                <div class="status">
+                    <p class="completed">Completed</p>
+                </div>
+                <div class="status">
+                    <p class="pending">Pending</p>
+                </div>
+                <div class="status">
+                    <p class="process">Process</p>
+                </div>
+                <div class="status">
+                    <p class="pending">Pending</p>
+                </div>
+                <div class="status">
+                    <p class="completed">Completed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
+</html>

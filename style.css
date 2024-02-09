@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*::selection{
+    background: #1c1f23;
+    color: white;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 1fr;
+}
+img{
+    user-select: none;
+    pointer-events: none;
+}
+header{
+    background-color: #ffffff;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 6%;
+}
+header h1{
+    font-size: 30px;
+    font-weight: 600;
+    cursor: default;
+}
+header .left-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+header .left-side .bx{
+    font-size: 25px;
+    margin-top: 5px;
+    transition: .3s;
+}
+header .left-side .bx:hover{
+    color: #585858;
+}
+.bx{
+    font-size: 20px;
+    color: black;
+}
+header .account{
+    border: 1px solid #1c1f23;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+header .account:hover{
+    filter: brightness(75%);
+}
+.sidebar{
+    background: #1c1f23;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+.sidebar h1{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    cursor: default;
+}
+.sidebar .links{
+    padding: 25px 6%;
+}
+.sidebar .links a{
+    display: flex;
+    text-decoration: none;
+    gap: 5px;
+    align-items: center;
+    color: white;
+    margin: 10px 0;
+    border-radius: 3px;
+    padding: 10px;
+    transition: .3s;
+}
+.sidebar .links a:hover{
+    background: #c5c5c556;
+}
+.main{
+    background: #e7e7e7;
+}
+.top-divs{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.stats-div{
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    flex-direction: column;
+    background: white;
+}
+.stats-div h1{
+    font-size: 35px;
+    cursor: default;
+}
+.stats-div p{
+    cursor: default;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #e7e7e7;
+    border-radius: 6px;
+    padding: 10px 15px;
+}
+.search-bar .bx{
+    cursor: pointer;
+}
+.search-bar input{
+    outline: none;
+    border: none;
+    width: 300px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background: #e7e7e7;
+}
+.search-bar input::placeholder{
+    color: #00000065;
+}
+.recent{
+    background: white;
+    margin: 50px 150px 0;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.recent-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 6%;
+}
+.recent-head h1{
+    font-size: 25px;
+    font-weight: 600;
+    cursor: default;
+}
+.search-filter .bx{
+    cursor: pointer;
+}
+.search-filter .search-bar{
+    border: 1px solid #0000006e;
+    background: transparent;
+}
+.search-filter .search-bar input{
+    background: transparent;
+}
+.recent-content{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+}
+.recent-content .col-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.recent-content .col-2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 28px;
+}
+.recent-content .col-3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.recent-content .col-1 .users{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin: 3px 0;
+}
+.recent-content .col-1 .users .bx{
+    padding: 3px 3px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: black;
+    color: white;
+}
+.completed{
+    font-style: normal;
+    color: limegreen;
+}
+.pending{
+    font-style: normal;
+    color: red;
+}
+.process{
+    color: darkgoldenrod;
+}
+.recent-content h3{
+    font-weight: 400;
+}
